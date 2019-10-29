@@ -166,31 +166,6 @@ You can also run the command in any instance of your service:
 lcp scale --project <projectID> --service <serviceID> --instance <abc123> 5
 ```
 
-## Stop a Service
-
-You can also use the CLI to stop a service. You can use all available flags for 
-this command to specify an environment, project, or remote. 
-
-When you run this command, the CLI prompts you to choose a service to stop from 
-all available services: 
-
-```shell
-lcp stop
-```
-
-This command does the same for the services in a given project: 
-
-```shell
-lcp stop --project <projectID>
-```
-
-Alternatively, you can provide the project and service IDs to stop a given 
-service: 
-
-```shell
-lcp stop --project <projectID> --service <serviceID>
-```
-
 ## Restart a Service
 
 Restarting a service from the CLI is simple. You can use all available flags for 
@@ -269,6 +244,7 @@ Command        | Description |
 -------------- | ----------- |
 `lcp docs`     | Open a DXP Cloud Docs page in your browser. |
 `lcp login`    | Log in to DXP Cloud. |
+`lcp logout`    | Logout from DXP Cloud. |
 `lcp deploy`   | Deploy a service to DXP Cloud. |
 `lcp list`     | Show a list of projects and services. |
 `lcp log`      | Show the logs of a project, service, or container. |
@@ -277,3 +253,4 @@ Command        | Description |
 `lcp stop`     | Stop a service. |
 `lcp shell`    | Open a shell to a service. |
 `lcp update`   | Update the DXP Cloud CLI. |
+`lcp version`  | Show current CLI version. |
